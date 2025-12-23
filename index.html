@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Result Management System</title>
+    <style>
+        /* ===== Body & Background ===== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ===== Container ===== */
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px 80px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 36px;
+        }
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background-color: #2575fc;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #6a11cb;
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 30px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .btn {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Result Management System</h1>
+
+        <!-- Admin Login Button -->
+        <a href="admin/admin_login.php" class="btn">Admin Login</a>
+
+        <!-- Student Login Button -->
+        <a href="student/student_login.php" class="btn">Student Login</a>
+    </div>
+</body>
+</html>
